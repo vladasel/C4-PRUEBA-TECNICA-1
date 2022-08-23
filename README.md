@@ -1,5 +1,11 @@
 # C4-PRUEBA-TECNICA-1
 
+## url heroku
+```
+https://prueba-tecnica-ej1.herokuapp.com/
+https://prueba-tecnica1-db.herokuapp.com/
+```
+
 ## END POINTS USUARIO
 ```
 POST https://prueba-tecnica-ej1.herokuapp.com/login
