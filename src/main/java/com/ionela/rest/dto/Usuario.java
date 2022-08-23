@@ -27,6 +27,8 @@ public class Usuario {
 	private String password;
 	@Column
 	private String role;
+	@Column
+	private String pseudonimo;
 
 	@JsonIgnore
 	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "usuarios")
@@ -69,10 +71,20 @@ public class Usuario {
 		this.grupos = grupos;
 	}
 
+	public String getPseudonimo() {
+		return pseudonimo;
+	}
+
+	public void setPseudonimo(String pseudonimo) {
+		this.pseudonimo = pseudonimo;
+	}
+
 	@Override
 	public String toString() {
 		return "Usuario [id=" + id + ", username=" + username + ", password=" + password + ", role=" + role
-				+ ", grupos=" + grupos + "]";
+				+ ", pseudonimo=" + pseudonimo + ", grupos=" + grupos + "]";
 	}
+
+	
 
 }
