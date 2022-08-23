@@ -20,7 +20,7 @@ DELETE https://prueba-tecnica-ej1.herokuapp.com/users/{id}
 
 ## END POINTS GRUPO
 ```
-
+GET https://prueba-tecnica-ej1.herokuapp.com/grupos
 ```
 
 
