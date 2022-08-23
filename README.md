@@ -22,6 +22,7 @@ DELETE https://prueba-tecnica-ej1.herokuapp.com/users/{id}
 ```
 GET https://prueba-tecnica-ej1.herokuapp.com/grupos
 POST https://prueba-tecnica-ej1.herokuapp.com/grupos    (@RequestBody Grupo grupo)
+GET ttps://prueba-tecnica-ej1.herokuapp.com/grupos/{id} 
 
 ```
 
