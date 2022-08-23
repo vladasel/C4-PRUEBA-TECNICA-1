@@ -59,5 +59,20 @@ public class Usuario {
 	public void setRole(String role) {
 		this.role = role;
 	}
+	@JsonIgnore
+	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "Grupo")
+	public List<Grupo> getGrupos() {
+		return grupos;
+	}
+
+	public void setGrupos(List<Grupo> grupos) {
+		this.grupos = grupos;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", username=" + username + ", password=" + password + ", role=" + role
+				+ ", grupos=" + grupos + "]";
+	}
 
 }
